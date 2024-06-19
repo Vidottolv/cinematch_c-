@@ -1,0 +1,6 @@
+@cinematch_back_HostAddress = http://localhost:5207
+
+GET {{cinematch_back_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
