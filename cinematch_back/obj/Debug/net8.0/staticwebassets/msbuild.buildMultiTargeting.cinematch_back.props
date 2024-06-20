@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\cinematch_back.props" />
+</Project>

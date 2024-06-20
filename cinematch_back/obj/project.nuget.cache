@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "vzDKqOQT4zOFug6ToNuMVZy/2y5IT2iNspVp4/J/1b1PT4TpfxiHz/KXOT4K+QYXNTbuRGMH/WXnpaGwzrasIg==",
+  "dgSpecHash": "MomR2FYIJNlyy8Rwqm70owTtkFJzxi0P6VMyOg8ep4VEPjiBjJJ5+yDqH4FtZ1Xd9lHdk0tXhfLiNLca3aNYNQ==",
   "success": true,
-  "projectFilePath": "C:\\src\\Backends\\cinematch_back\\cinematch_back.csproj",
+  "projectFilePath": "C:\\src\\Backends\\Cinematch\\cinematch_back\\cinematch_back.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Lucas\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Lucas\\.nuget\\packages\\microsoft.aspnetcore.openapi\\8.0.0\\microsoft.aspnetcore.openapi.8.0.0.nupkg.sha512",
