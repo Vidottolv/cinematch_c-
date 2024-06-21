@@ -4,21 +4,18 @@ using cinematch_back.Data.Map;
 
 namespace cinematch_back.Data
 {
-    public class CinematchDBContext : DbContext
+    public class GenreDBContext : DbContext
     {
-        public CinematchDBContext(DbContextOptions<CinematchDBContext> options) : base(options) 
+        public GenreDBContext(DbContextOptions<GenreDBContext> options) : base(options) 
         { 
         
         }
 
-        public DbSet<TestModel> TBLTestes { get; set; }
         public DbSet<GenreModel> TBLGenres { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.ApplyConfiguration(new TestMap());
             modelBuilder.ApplyConfiguration(new GenreMap());
-
             base.OnModelCreating(modelBuilder);
         }
     }

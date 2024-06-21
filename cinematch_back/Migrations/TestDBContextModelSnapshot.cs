@@ -9,7 +9,7 @@ using cinematch_back.Data;
 
 namespace cinematch_back.Migrations
 {
-    [DbContext(typeof(TestDBContext))]
+    [DbContext(typeof(CinematchDBContext))]
     partial class TestDBContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)
@@ -20,6 +20,23 @@ namespace cinematch_back.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 63);
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
+
+            modelBuilder.Entity("cinematch_back.Models.GenreModel", b =>
+                {
+                    b.Property<int>("IDGenre")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("IDGenre"));
+
+                    b.Property<string>("Genre")
+                        .HasMaxLength(255)
+                        .HasColumnType("character varying(255)");
+
+                    b.HasKey("IDGenre");
+
+                    b.ToTable("TBLGenres");
+                });
 
             modelBuilder.Entity("cinematch_back.Models.TestModel", b =>
                 {

@@ -7,8 +7,8 @@ namespace cinematch_back.Repository
 {
     public class TestRepository : ITestRepository
     {
-        private readonly TestDBContext _dbContext;
-        public TestRepository(TestDBContext testDBContext)
+        private readonly CinematchDBContext _dbContext;
+        public TestRepository(CinematchDBContext testDBContext)
         { 
             _dbContext = testDBContext;
         }

@@ -8,11 +8,11 @@ namespace cinematch_back.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class DadosController : ControllerBase
+    public class TesteController : ControllerBase
     {
         private readonly ITestRepository _testRepository;
 
-        public DadosController(ITestRepository testRepository)
+        public TesteController(ITestRepository testRepository)
         {
             _testRepository = testRepository;
         }

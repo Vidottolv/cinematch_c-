@@ -6,7 +6,7 @@ using cinematch_back.Repository;
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
-builder.Services.AddDbContext<TestDBContext>(options =>
+builder.Services.AddDbContext<CinematchDBContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 builder.Services.AddCors(options =>
 {
