@@ -1,6 +1,4 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using cinematch_back.Data;
 using cinematch_back.Models;
 using cinematch_back.Repository.Interfaces;
 
@@ -20,9 +18,8 @@ namespace cinematch_back.Controllers
         [HttpGet]
         public async Task<ActionResult<List<TestModel>>> BuscarTodosOsUsuarios()
         {
-            List<TestModel> testeReturn = await _testRepository.GetAll();
-            Console.WriteLine(testeReturn);
-            return Ok(testeReturn);
+            List<TestModel> getReturn = await _testRepository.GetAll();
+            return Ok(getReturn);
         }
     }
 }

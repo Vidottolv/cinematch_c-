@@ -19,7 +19,10 @@ builder.Services.AddCors(options =>
         });
 });
 
-builder.Services.AddScoped<ITestRepository, TestRepository>(); 
+builder.Services.AddScoped<ITestRepository, TestRepository>();
+builder.Services.AddScoped<IGenreRepository, GenreRepository>();
+builder.Services.AddScoped<IStoryTypeRepository, StoryTypeRepository>();
+builder.Services.AddScoped<IAgeRepository, AgeRepository>();
 
 var app = builder.Build();
 

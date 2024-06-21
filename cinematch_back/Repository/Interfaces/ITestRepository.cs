@@ -6,6 +6,5 @@ namespace cinematch_back.Repository.Interfaces
     {
         Task<List<TestModel>> GetAll();
         Task<TestModel> GetById(int id);
-
     }
 }

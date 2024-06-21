@@ -8,9 +8,9 @@ namespace cinematch_back.Repository
     public class TestRepository : ITestRepository
     {
         private readonly CinematchDBContext _dbContext;
-        public TestRepository(CinematchDBContext testDBContext)
+        public TestRepository(CinematchDBContext DBContext)
         { 
-            _dbContext = testDBContext;
+            _dbContext = DBContext;
         }
         public async Task<List<TestModel>> GetAll()
         {

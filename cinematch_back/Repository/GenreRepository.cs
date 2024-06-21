@@ -7,12 +7,12 @@ namespace cinematch_back.Repository
 {
     public class GenreRepository : IGenreRepository
     {
-        private readonly GenreDBContext _dbContext;
-        public GenreRepository(GenreDBContext genreDBContext)
+        private readonly CinematchDBContext _dbContext;
+        public GenreRepository(CinematchDBContext DBContext)
         {
-            _dbContext = genreDBContext;
+            _dbContext = DBContext;
         }
-        public async Task<List<GenreModel>> GetAllGenres()
+        public async Task<List<GenreModel>> GetAll()
         {
             return await _dbContext.TBLGenres.ToListAsync();
         }
