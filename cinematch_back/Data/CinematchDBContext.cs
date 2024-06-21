@@ -16,7 +16,8 @@ namespace cinematch_back.Data
         public DbSet<StoryTypeModel> TBLStoryType { get; set; }
         public DbSet<AgeModel> TBLAge { get; set; }
         public DbSet<EndModel> TBLEnd { get;set; }
-        public DbSet<KindModel> TBLKind { get; set; }  
+        public DbSet<KindModel> TBLKind { get; set; }
+        public DbSet<DurationModel> TBLDurationMovie { get; internal set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -26,6 +27,7 @@ namespace cinematch_back.Data
             modelBuilder.ApplyConfiguration(new AgeMap());
             modelBuilder.ApplyConfiguration(new EndMap());
             modelBuilder.ApplyConfiguration(new KindMap());
+            modelBuilder.ApplyConfiguration(new DurationMap());
 
 
             base.OnModelCreating(modelBuilder);
