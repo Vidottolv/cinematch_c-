@@ -23,6 +23,7 @@ builder.Services.AddScoped<ITestRepository, TestRepository>();
 builder.Services.AddScoped<IGenreRepository, GenreRepository>();
 builder.Services.AddScoped<IStoryTypeRepository, StoryTypeRepository>();
 builder.Services.AddScoped<IAgeRepository, AgeRepository>();
+builder.Services.AddScoped<IEndRepository, EndRepository>();
 
 var app = builder.Build();
 

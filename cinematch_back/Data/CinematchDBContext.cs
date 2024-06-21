@@ -15,6 +15,7 @@ namespace cinematch_back.Data
         public DbSet<GenreModel> TBLGenres { get; set; }
         public DbSet<StoryTypeModel> TBLStoryType { get; set; }
         public DbSet<AgeModel> TBLAge { get; set; }
+        public DbSet<EndModel> TBLEnd { get;set; }
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -23,6 +24,7 @@ namespace cinematch_back.Data
             modelBuilder.ApplyConfiguration(new GenreMap());
             modelBuilder.ApplyConfiguration(new StoryTypeMap());
             modelBuilder.ApplyConfiguration(new AgeMap());
+            modelBuilder.ApplyConfiguration(new EndMap());
 
 
             base.OnModelCreating(modelBuilder);
