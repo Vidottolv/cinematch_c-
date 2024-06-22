@@ -6,10 +6,10 @@ using System.Diagnostics.CodeAnalysis;
 
 namespace cinematch_back.Repository
 {
-    public class DurationMovieRepository : IDurationMovie
+    public class DurationRepository : IDurationRepository
     {
         private readonly CinematchDBContext _dbContext;
-        public DurationMovieRepository(CinematchDBContext dbContext)
+        public DurationRepository(CinematchDBContext dbContext)
         {
             _dbContext = dbContext;
         }

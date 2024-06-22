@@ -2,7 +2,7 @@
 
 namespace cinematch_back.Repository.Interfaces
 {
-    public interface IDurationMovie
+    public interface IDurationRepository
     {
         Task<List<DurationModel>> GetAll();
         Task<DurationModel> GetById(int id);
