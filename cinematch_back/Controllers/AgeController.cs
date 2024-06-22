@@ -17,7 +17,7 @@ namespace cinematch_back.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<List<AgeModel>>> GetGenres()
+        public async Task<ActionResult<List<AgeModel>>> GetAge()
         {
             List<AgeModel> getReturn = await _ageRepository.GetAll();
             return Ok(getReturn);

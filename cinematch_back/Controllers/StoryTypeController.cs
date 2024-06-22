@@ -16,7 +16,7 @@ namespace cinematch_back.Controllers
         }
     
         [HttpGet]
-        public async Task<ActionResult<List<StoryTypeModel>>> GetGenres()
+        public async Task<ActionResult<List<StoryTypeModel>>> GetStoryType()
         {
             List<StoryTypeModel> getReturn = await _storytypeRepository.GetAll();
             return Ok(getReturn);

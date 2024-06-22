@@ -24,6 +24,7 @@ builder.Services.AddScoped<IGenreRepository, GenreRepository>();
 builder.Services.AddScoped<IStoryTypeRepository, StoryTypeRepository>();
 builder.Services.AddScoped<IAgeRepository, AgeRepository>();
 builder.Services.AddScoped<IEndRepository, EndRepository>();
+builder.Services.AddScoped<IKindRepository, KindRepository>();
 
 var app = builder.Build();
 
